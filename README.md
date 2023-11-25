@@ -1,3 +1,3 @@
-Welcome! This is the Portfolio of Tengfei Jiang, please check Tjiangf.github.io
+Welcome! This is the Portfolio of Tengfei Jiang.
 
 Template borrowed from [Andy Zeng](https://andyzeng.github.io/).
