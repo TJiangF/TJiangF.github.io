@@ -46,16 +46,16 @@
           <h1>Tengfei Jiang</h1>
           <p>
             <p>
-              Welcome to my portfolio! I am a M.S Electrical and Computer Engineering student at Brown University, graduated from Southeast University for Bachelor Degree.
+              Welcome to my portfolio! I just graduated from Brown University majored in Electrical and Computer Engineering, and got Bachelor Degree at Southeast University.
             </p>
             <p>
-              I've been into hardware stuff, especically electrical portable devices, and I worked on multiple projects based on of embedded systems.
+              I've been into hardware design, especically electrical portable devices, and I worked on multiple projects based on of embedded systems.
             </p>
             </p>
-              Currently working on two projects about ESP32, involving memory management, audio processing and analog amplification related. Also, I am working on coordinate robotics using PX4 and mavros, implementing Flocking control and swarm situations.
+              Currently working on several projects about ESP32, involving memory management, audio processing and analog amplification related. Also, I have experience about Lidar and Robotics.
             <p>
             <p>
-              Feel free to contact me if we have shared interests or similar projects, much appreciated.
+              I am open to positions such as Eletrical and Harware Engineer. Feel free to contact me if I meet the requiements or we have shared interests or similar projects, much appreciated.
             </p>
             <div id="more-bio" style="display: None">
               <br>
@@ -66,7 +66,7 @@
             <a href="https://github.com/TJiangF">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://www.linkedin.com/in/tengfei-jiang-13534524b/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <br><br>
-            Email: tengfei_jiang@brown.edu
+            Email: jiangtfcz99@gmail.com
             <br><br>
           </p>
         </div>
@@ -94,14 +94,15 @@
 
           
           <video class="preview1" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Robotics/demo_1.mp4" type="video/mp4"></video></a>
-          <video class="preview2" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Robotics/demo_3.mp4" type="video/mp4"></video></a>
+          <video class="preview2" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Interactive_Display/demo.mp4" type="video/mp4"></video></a>
           <video class="preview3" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/SmartInk/horse.mp4" type="video/mp4"></video></a>
-          <video class="preview4" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Nixie_Clock/IMG_1674.mp4" type="video/mp4"></video></a>
+          <video class="preview4" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Nixie_Clock/nixie.mp4" type="video/mp4"></video></a>
           <video class="preview5" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Endoscopy_matching/matching_low_colon_sift.mp4" type="video/mp4"></video></a>
-          <video class="preview6" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/FDM_3D_Printing/IMG_1445.mp4" type="video/mp4"></video></a>
+          <video class="preview6" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/FDM_3D_Printing/fdm.mp4" type="video/mp4"></video></a>
           <video class="preview7" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/SLAM/slam/SLAMprocess.mp4" type="video/mp4"></video></a>
           <video class="preview9" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Flocking/flocking2.mp4" type="video/mp4"></video></a>
           <video class="preview8" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/Concrete_3D_Printing/concrete.mp4" type="video/mp4"></video></a>
+
           <!-- <video class="preview10" playsinline="" muted="" autoplay="" loop=""><source src="images/Proj/" type="video/mp4"></video></a> -->
           <!-- <div id="others-image"> -->
             <!-- <img src="images/Proj/SmartInk/result_chart.png"> -->
@@ -181,6 +182,51 @@
         </div> -->
         <div id="main-projects">
 
+          <div class="list-item projects description" data-category="projects">
+            <a href="https://tjiangf.github.io/" class="thumbnail">
+              <video playsinline="" muted="" autoplay="" loop="" width="180px" height="120px">
+                <source src="images/Proj/Interactive_Display/demo.mp4" type="video/mp4">
+              </video>
+            </a>
+            <div class="project-description">
+              <h3><b>Interactive Display with Lidar</b></h3>
+              <p>
+                It is a way to interact with any display remotely by waving or pointing with hand or other object. The lidar is used for hand detection and localization, and
+                the data is sent back to host pc with a TTL converter, and the host PC is running a SFML Demo.
+                <p>
+                  With all parameters set up, including display size, the distance between lidar and display edge, and the rotation for better leveling performance, it is a all-display
+                  compatible way to remotely interact.
+                <p>
+                <br>
+                <br/>
+                <a href="https://github.com/TJiangF/Interactive_Display">Github</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="list-item projects description" data-category="projects">
+            <a href="https://tjiangf.github.io/" class="thumbnail">
+              <video playsinline="" muted="" autoplay="" loop="" width="180px">
+                <source src="images/Proj/Radio_Delay/rdp.mp4" type="video/mp4">
+              </video>
+            </a>
+            <div class="project-description">
+              <h3><b>Radio Delay Project</b></h3>
+              <p>
+                Built a device that delays the radio broadcast to synchronize with TV stream, it takes radio output signal as input, using DACs of
+                ESP32-S3 chip to convert the signal to data, stores in the RAM and send out through PWM signal after the time being set, to headphones or speakers.
+                The Bluetooth functions are supported as well.
+                <p>
+                Used DesignSpark to design the schematic and PCB. The input signal is amplified by opamps with digipots, keeping the input signal
+                voltage in the range of ADC, then the digital data is stored in 8MB PSRAM of ESP32 chip. The transparent case is designed with Solidworks and printed by 3D printer.
+                <p>
+                The device is powered by a lithuim battery and charged by usb-c cable.
+                <br>
+                <br/>
+                  <a href="https://github.com/alecpratt/ENGN1650/tree/main">Github</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              </p>
+            </div>
+          </div>
 
           <div class="list-item projects description" data-category="projects">
             <a href="https://tjiangf.github.io/" class="thumbnail">
@@ -194,8 +240,9 @@
                 Built a setup collecting rosbag files. Developped 2d SLAM algorithms in Matlab. Implemented mainstream 3D SLAM algorithms
                 and made improvements in certain scenarios. Processed pointcloud to improve the efficiency of offline mapping. Found a way to
                 evaluate the simlarity of pointclouds. 
+                <br>
                 <br/>
-                  <a href="https://github.com/TJiangF/SLAM_package">Github repo</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="https://github.com/TJiangF/SLAM_package">Github</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <!-- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10035296">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
                   <!-- <a href="https://www.bilibili.com/video/BV1mr4y1x7cn/?share_source=copy_web">Video</a> -->
               </p>
@@ -272,7 +319,7 @@
           <div class="list-item projects description" data-category="projects">
             <a href="https://tjiangf.github.io/" class="thumbnail">
               <video playsinline="" muted="" autoplay="" loop="" width="180px">
-                <source src="images/Proj/Nixie_Clock/IMG_1674.mp4" type="video/mp4">
+                <source src="images/Proj/Nixie_Clock/nixie.mp4" type="video/mp4">
               </video>
             </a>
             <div class="project-description">
@@ -286,25 +333,7 @@
             </div>
           </div>
 
-          <div class="list-item projects description" data-category="projects">
-            <a href="https://tjiangf.github.io/" class="thumbnail">
-              <img src="images/Proj/Smart_Watch/initial_design.png" alt="Description of the PNG Image" width="180px">
-            </a>
-            <div class="project-description">
-              <h3><b>ESP32 Based werable Smart Watch</b></h3>
-              <p>
-                Developing a wearable device (Smart Watch at the current stage), which intends to improve the tendency of people doing manual
-                logging. Also, the device can be used to assist mental therapy and health monitoring. Working on the hardware design and embedded
-                programming based on ESP32.
-                <p>
-                  <p>
-                The most unique part of this watch is the interactive way which is rotating the whole bezel for
-                inputting, three hall sensors are placed beneath the bezel detecting the direction of rotation.<br>
-                <br/>
-                  
-              </p>
-            </div>
-          </div>
+
 
 
 
@@ -370,7 +399,8 @@
 
 
       </div>
-
+      <br>
+      </br>
       <div id="footer">Website's template borrowed from <a href="https://andyzeng.github.io/">Andy Zeng</a> </div>
 
     </div>
